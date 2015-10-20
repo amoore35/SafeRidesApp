@@ -20,6 +20,10 @@
             android:name=".RiderInfoCheckActivity"
             android:label="@string/title_activity_rider_info_check" >
         </activity>
+        <activity
+            android:name=".DriverCallerInfoActivity"
+            android:label="@string/title_activity_driver_caller_info" >
+        </activity>
     </application>
 
 </manifest>
