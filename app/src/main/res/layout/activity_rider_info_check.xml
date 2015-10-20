@@ -1,12 +1,97 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="edu.elon.saferides.RiderInfoCheckActivity">
+    android:orientation="vertical"
+    tools:context="edu.elon.saferides.RiderInfoCheckActivity"
+    android:weightSum="1">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
-</RelativeLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/name_view"
+        android:id="@+id/textView"
+        android:textAlignment="center" />
+
+    <Space
+        android:layout_width="16dp"
+        android:layout_height="16dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/textView2"
+        android:textAlignment="center"/>
+
+    <Space
+        android:layout_width="16dp"
+        android:layout_height="16dp" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/phone_number_view"
+        android:id="@+id/textView3"
+        android:textAlignment="center"/>
+
+    <Space
+        android:layout_width="16dp"
+        android:layout_height="16dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/display_phone_num"
+        android:textAlignment="center"/>
+
+    <Space
+        android:layout_width="16dp"
+        android:layout_height="16dp" />
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/check_correct"
+        android:id="@+id/check_correct"
+        android:textAlignment="center" />
+
+
+    <Space
+        android:layout_width="16dp"
+        android:layout_height="16dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="46dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:text="@string/next_button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickNext"
+        android:id="@+id/next_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.11" />
+
+
+</LinearLayout>

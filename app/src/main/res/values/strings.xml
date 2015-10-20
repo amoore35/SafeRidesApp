@@ -6,6 +6,7 @@
     <string name="next_button">Next</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_rider_info_check">RiderInfoCheckActivity</string>
+    <string name="check_correct">Is the information above correct?</string>
 
     <string name="hello_world">Hello world!</string>
 </resources>
