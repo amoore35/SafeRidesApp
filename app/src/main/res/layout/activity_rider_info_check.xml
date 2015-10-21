@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text=""
-        android:id="@+id/textView2"
+        android:id="@+id/name_view"
         android:textAlignment="center"/>
 
     <Space
@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text=""
-        android:id="@+id/display_phone_num"
+        android:id="@+id/phone_view"
         android:textAlignment="center"/>
 
     <Space
@@ -74,7 +74,8 @@
 
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/">
 
         <Space
             android:layout_width="16dp"

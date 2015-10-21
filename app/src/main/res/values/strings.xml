@@ -12,6 +12,5 @@
     <string name="check_correct">Is the information above correct?</string>
     <string name="caller_location">Caller's Location</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="title_activity_driver_caller_info">DriverCallerInfoActivity</string>
+\    <string name="title_activity_driver_caller_info">DriverCallerInfoActivity</string>
 </resources>
