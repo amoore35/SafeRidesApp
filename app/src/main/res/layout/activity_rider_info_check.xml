@@ -15,7 +15,8 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/name_view"
         android:id="@+id/textView"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textStyle="bold" />
 
     <Space
         android:layout_width="16dp"
@@ -40,7 +41,8 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/phone_number_view"
         android:id="@+id/textView3"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:textStyle="bold" />
 
     <Space
         android:layout_width="16dp"
@@ -65,7 +67,9 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/check_correct"
         android:id="@+id/check_correct"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="15dp" />
 
 
     <Space
@@ -75,7 +79,7 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/">
+        >
 
         <Space
             android:layout_width="16dp"

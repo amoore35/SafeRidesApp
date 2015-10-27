@@ -2,15 +2,20 @@
     <string name="app_name">Safe Rides</string>
 
     <string name="name_view">Name: </string>
-    <string name="callerName_view">Caller's Name: </string>
+    <string name="callerName_view">Caller\'s Name: </string>
     <string name="phone_number_view">Phone Number:</string>
-    <string name="callerPhone_number_view">Caller's Number:</string>
+    <string name="callerPhone_number_view">Caller\'s Number:</string>
     <string name="next_button">Next</string>
     <string name="accept_button">Accept Caller</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_rider_info_check">RiderInfoCheckActivity</string>
-    <string name="check_correct">Is the information above correct?</string>
-    <string name="caller_location">Caller's Location</string>
-
-\    <string name="title_activity_driver_caller_info">DriverCallerInfoActivity</string>
+    <string name="check_correct">If the above information is correct, click next. Otherwise, go back
+    and edit your information.</string>
+    <string name="caller_location">Caller\'s Location</string>
+    <string name="welcome">Welcome to Safe Rides!</string>
+    <string name="pick_option">Please pick one of the following:</string>
+    <string name="driver">Driver</string>
+    <string name="rider">Rider</string>
+    <string name="title_activity_driver_caller_info">DriverCallerInfoActivity</string>
+    <string name="title_activity_user_type">UserTypeActivity</string>
 </resources>
