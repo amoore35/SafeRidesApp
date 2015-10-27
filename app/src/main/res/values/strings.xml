@@ -18,4 +18,6 @@
     <string name="rider">Rider</string>
     <string name="title_activity_driver_caller_info">DriverCallerInfoActivity</string>
     <string name="title_activity_user_type">UserTypeActivity</string>
+    <string name="title_activity_accepted_caller">AcceptedCallerActivity</string>
+    <string name="rider_direction">Here are the directions to the rider:</string>
 </resources>
