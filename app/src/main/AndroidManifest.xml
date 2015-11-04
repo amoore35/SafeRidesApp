@@ -8,7 +8,8 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value=""
+            android:value="AIzaSyDnYSn8AA1VJBxn0ckl0eK0ZCdNKk4-ykI"
+            />
         <activity
             android:name=".RiderInputActivity"
             android:label="@string/app_name" >
@@ -39,5 +40,8 @@
             android:label="@string/title_activity_rider_request_sent" >
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
 </manifest>
