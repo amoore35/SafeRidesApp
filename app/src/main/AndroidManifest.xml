@@ -32,6 +32,10 @@
             android:name=".AcceptedCallerActivity"
             android:label="@string/title_activity_accepted_caller" >
         </activity>
+        <activity
+            android:name=".RiderRequestSentActivity"
+            android:label="@string/title_activity_rider_request_sent" >
+        </activity>
     </application>
 
 </manifest>

@@ -19,5 +19,8 @@
     <string name="title_activity_driver_caller_info">DriverCallerInfoActivity</string>
     <string name="title_activity_user_type">UserTypeActivity</string>
     <string name="title_activity_accepted_caller">AcceptedCallerActivity</string>
-    <string name="rider_direction">Here are the directions to the rider:</string>
+    <string name="rider_direction">Here is the pickup location:</string>
+    <string name="title_activity_rider_request_sent">RiderRequestSentActivity</string>
+    <string name="ride_accepted">You\'re request has been sent!</string>
+    <string name="notification_to_rider">You will be notified when your driver has arrived.</string>
 </resources>

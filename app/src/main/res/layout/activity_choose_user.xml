@@ -8,15 +8,18 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".ChooseUserActivity">
+    tools:context=".ChooseUserActivity"
+    android:background="#D4AF37">
 
     <TextView
         android:text="@string/welcome"
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
-        android:textStyle="bold"/>
+        android:textSize="33dp"
+        android:textStyle="bold"
+        android:textColor="#800000"
+        android:gravity="center"/>
 
     <TextView
         android:text="@string/pick_option"
@@ -25,7 +28,8 @@
         android:layout_below="@+id/welcome"
         android:layout_marginTop="15dp"
         android:textSize="20dp"
-        android:id="@+id/textView" />
+        android:id="@+id/textView"
+        android:textColor="#800000" />
 
     <Button
         android:layout_width="wrap_content"
@@ -35,7 +39,9 @@
         android:layout_marginTop="46dp"
         android:layout_below="@+id/textView"
         android:layout_alignParentStart="true"
-        android:onClick="onClickRider"/>
+        android:onClick="onClickRider"
+        android:background="#323232"
+        android:textColor="#ffffff" />
 
     <Button
         android:layout_width="wrap_content"
@@ -44,6 +50,8 @@
         android:id="@+id/driver"
         android:layout_alignTop="@+id/ride"
         android:layout_alignEnd="@+id/welcome"
-        android:onClick="onClickDriver"/>
+        android:onClick="onClickDriver"
+        android:background="#323232"
+        android:textColor="#ffffff" />
 
 </RelativeLayout>
