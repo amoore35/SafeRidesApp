@@ -42,9 +42,10 @@ public class RiderInfoCheckActivity extends Activity {
     }
 
     public void onClickNext(View view){
+        new RequestRide().execute();
         Intent intent = new Intent(this, RiderRequestSentActivity.class);
 
-        new RequestRide().execute();
+
 
         startActivity(intent);
 
@@ -61,6 +62,7 @@ public class RiderInfoCheckActivity extends Activity {
                         "&latitude=" + URLEncoder.encode(latitude, "UTF-8") +
                         "&longitude=" + URLEncoder.encode(longitude, "UTF-8");
                 URL url = new URL(baseURL + "/request?" + param);
+
 
                 urlConnection = (HttpURLConnection) url.openConnection();
                 urlConnection.setDoOutput(true);
