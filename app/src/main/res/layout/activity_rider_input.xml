@@ -33,7 +33,8 @@
             android:layout_height="wrap_content"
             android:textSize="24dp"
             android:id="@+id/name_view"
-            android:textColor="#800000" />
+            android:textColor="#800000"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/name_input"
@@ -65,7 +66,8 @@
             android:layout_height="wrap_content"
             android:textSize="24dp"
             android:id="@+id/phone_number_view"
-            android:textColor="#800000" />
+            android:textColor="#800000"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/phone_number_input"
@@ -77,36 +79,40 @@
 
     </LinearLayout>
 
-
-
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
-
-
-
 
         <Space
             android:layout_width="16dp"
             android:layout_height="16dp"/>
 
-    </RelativeLayout>
-    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
-        android:name="com.google.android.gms.maps.MapFragment"
-        android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wait_warning"
+            android:id="@+id/textView6"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000"
+            android:textSize="17dp"
+            android:textStyle="bold" />
 
-        android:id="@+id/map"
-        android:layout_weight="0.62"
-        android:layout_height="0dp" />
+
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="16dp"
+        android:layout_height="16dp"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/next_button"
         android:onClick="onClickNext"
-        android:id="@+id/next_button"
+        android:id="@+id/next_button_wait"
         android:textColor="#ffffff"
-        android:background="#323232"
+        android:background="#800000"
         android:layout_gravity="center_horizontal"
         android:height="30dp"
         android:width="100dp" />

@@ -19,9 +19,6 @@ import java.util.Scanner;
 
 public class ChooseUserActivity extends Activity {
 
-    // needed for the AGPS
-    private LocationManager locationManager;
-
     private final String baseURL = "http://trumpy.cs.elon.edu:5000/rides";
 
     private String name, phoneNumber, latitude, longitude;
@@ -30,54 +27,18 @@ public class ChooseUserActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_user);
-        // AGPS
-        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
     }
 
     public void onClickDriver(View view) {
-        Intent intent = new Intent(this, DriverCallerInfoActivity.class);
-
         new GetRider().execute();
-
-        intent.putExtra("name", name);
-
-        startActivity(intent);
     }
 
     public void onClickRider(View view) {
         Intent intent = new Intent(this, RiderInputActivity.class);
         startActivity(intent);
-
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        // AGPS
-        locationManager.removeUpdates(locationListener);
-    }
 
-    LocationListener locationListener = new LocationListener() {
-        @Override
-        public void onLocationChanged(Location location) {
-
-        }
-
-        @Override
-        public void onStatusChanged(String provider, int status, Bundle extras) {
-
-        }
-
-        @Override
-        public void onProviderEnabled(String provider) {
-
-        }
-
-        @Override
-        public void onProviderDisabled(String provider) {
-
-        }
-    };
 
     private class GetRider extends AsyncTask<Void, Void, Void> {
         String response = "";
@@ -95,7 +56,16 @@ public class ChooseUserActivity extends Activity {
                 InputStream in = new BufferedInputStream((urlConnection.getInputStream()));
                 Scanner sc = new Scanner(in);
                 response = sc.nextLine();
-                name = response;
+
+                System.out.println("response -" + response);
+
+
+                String[] info = response.split(",");
+                phoneNumber = info[0];
+                name = info[1];
+                latitude = info[2];
+                longitude = info[3];
+
 
                 // used to allow UI to update the TextView
                 publishProgress();
@@ -114,7 +84,19 @@ public class ChooseUserActivity extends Activity {
         // This is allowed to call UI objects
         @Override
         protected void onProgressUpdate(Void ... voids) {
-            name = response;
+            String[] info = response.split(",");
+            phoneNumber = info[0];
+            name = info[1];
+            latitude = info[2];
+            longitude = info[3];
+
+            Intent intent = new Intent(getApplicationContext(), DriverCallerInfoActivity.class);
+            intent.putExtra("name", name);
+            intent.putExtra("phoneNumber", phoneNumber);
+            intent.putExtra("latitude", latitude);
+            intent.putExtra("longitude", longitude);
+
+            startActivity(intent);
         }
     }
 

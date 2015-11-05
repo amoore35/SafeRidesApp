@@ -22,5 +22,7 @@
     <string name="rider_direction">Here is the pickup location:</string>
     <string name="title_activity_rider_request_sent">RiderRequestSentActivity</string>
     <string name="ride_accepted">Your request has been sent!</string>
+    <string name="wait_warning">Click the button when it turns green</string>
     <string name="notification_to_rider">You will get a call when your driver has arrived.</string>
+    <string name="maps_info">Click accept to view the location of your rider</string>
 </resources>

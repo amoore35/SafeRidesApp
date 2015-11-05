@@ -9,9 +9,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDnYSn8AA1VJBxn0ckl0eK0ZCdNKk4-ykI"
-            />
+
         <activity
             android:name=".RiderInputActivity"
             android:label="@string/app_name" >
@@ -32,10 +30,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".AcceptedCallerActivity"
-            android:label="@string/app_name" >
         </activity>
         <activity
             android:name=".RiderRequestSentActivity"

@@ -12,16 +12,6 @@
     android:background="#D4AF37"
     android:weightSum="1">
 
-
-    <Space
-        android:layout_width="16dp"
-        android:layout_height="16dp" />
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-
         <Space
             android:layout_width="16dp"
             android:layout_height="16dp" />
@@ -32,24 +22,16 @@
             android:layout_height="wrap_content"
             android:textSize="24dp"
             android:id="@+id/callerName_view"
-            android:textColor="#800000" />
+            android:textColor="#800000"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/caller_name"/>
-
-
-    </LinearLayout>
-
-    <Space
-        android:layout_width="16dp"
-        android:layout_height="16dp" />
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+            android:id="@+id/caller_name"
+            android:textSize="24dp"
+            android:textColor="#000"/>
 
         <Space
             android:layout_width="16dp"
@@ -61,34 +43,32 @@
             android:layout_height="wrap_content"
             android:textSize="24dp"
             android:id="@+id/callerPhone_number_view"
-            android:textColor="#800000" />
+            android:textColor="#800000"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold" />
 
-
-    </LinearLayout>
-
-    <Space
-        android:layout_width="16dp"
-        android:layout_height="16dp" />
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textColor="#000"
+            android:id="@+id/caller_number"
+            android:autoLink="phone"
+            android:textColorLink="#000"/>
 
         <Space
             android:layout_width="16dp"
             android:layout_height="16dp" />
 
-        <TextView
-            android:text="@string/caller_location"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="24dp"
-            android:id="@+id/caller_location"
-            android:textColor="#800000" />
-
-
-    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maps_info"
+        android:id="@+id/textView7"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="17dp" />
 
     <RelativeLayout
         android:layout_width="fill_parent"

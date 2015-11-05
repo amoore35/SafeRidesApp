@@ -57,10 +57,12 @@ public class RiderInfoCheckActivity extends Activity {
         protected Void doInBackground(Void... voids) {
             HttpURLConnection urlConnection = null;
             try {
-                String param = "phone" + URLEncoder.encode(phoneText, "UTF-8") +
+                String param = "phone=" + URLEncoder.encode(phoneText, "UTF-8") +
                         "&name=" + URLEncoder.encode(nameText, "UTF-8") +
                         "&latitude=" + URLEncoder.encode(latitude, "UTF-8") +
                         "&longitude=" + URLEncoder.encode(longitude, "UTF-8");
+
+                System.out.println(param);
                 URL url = new URL(baseURL + "/request?" + param);
 
 
