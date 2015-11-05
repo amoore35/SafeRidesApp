@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.elon.saferides" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -33,11 +35,11 @@
         </activity>
         <activity
             android:name=".AcceptedCallerActivity"
-            android:label="@string/title_activity_accepted_caller" >
+            android:label="@string/app_name" >
         </activity>
         <activity
             android:name=".RiderRequestSentActivity"
-            android:label="@string/title_activity_rider_request_sent" >
+            android:label="@string/app_name" >
         </activity>
     </application>
 
